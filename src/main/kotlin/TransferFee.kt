@@ -6,7 +6,7 @@ fun main() {
     print("Введите сумму перевода: ")
     val amount = readln().toDouble() * TOTAL_IN_ROUBLE;
     val commission = amount * PERCENT
-    val finalCommission = if (commission <= MIN_TAX) MIN_TAX  else commission
+    val finalCommission = if (commission <= MIN_TAX) MIN_TAX else commission
     val commissionRub = finalCommission / TOTAL_IN_ROUBLE
     println("Комиссия за перевод составит $commissionRub руб.")
 }
